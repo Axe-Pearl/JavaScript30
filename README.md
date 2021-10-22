@@ -1,1 +1,1 @@
-# 30 Projects of JavaScript challange
+# 30 Projects of JavaScript challenge

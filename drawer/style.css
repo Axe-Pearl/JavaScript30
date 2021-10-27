@@ -1,0 +1,50 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+.toggleBtn{
+    font-size:30px;
+    cursor:pointer;
+    margin-bottom: 5px;
+}
+.drawer{
+    background-color:rgba(0, 0, 0, 0.856);
+    width:0px;
+    height:100%;
+    transition:0.5s;
+    overflow-x: hidden;
+    position:fixed;
+}
+
+.closebtn{
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+
+.heading{
+   left:65px;
+   display: block;
+   position: absolute;
+}
+.links{
+    top:100px;
+    left:50px;
+    position: absolute;
+}
+.drawer a{
+    font-size: 25px;
+    color:rgba(136, 136, 206, 0.329);
+    line-height: 2.5rem;
+    text-decoration: none;
+    display: block;
+}
+.drawer a:hover{
+    color:white;
+}
+.drawer p{
+   display: block;
+   position: absolute;
+   left:20px;
+   bottom: 200px;
+   font-size: 20px;
+}

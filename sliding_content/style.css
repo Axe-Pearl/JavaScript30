@@ -1,0 +1,39 @@
+body{
+    background-color:whitesmoke;
+}
+
+.parent_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.img_prof{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+.quote_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:azure;
+    padding:20px;
+    width: 650px;
+    height: 350px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.toggle_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: absolute;
+    bottom: 200px;
+}
+
+.fas{
+    margin: 8px;
+}

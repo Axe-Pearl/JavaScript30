@@ -79,6 +79,28 @@
 
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
 
+    const anu = {
+      name:"Anurag",
+      age:21,
+      social:{
+        twitter:"@anu",
+        github:"@Axe-Pearl"
+      }
+    };
+    console.clear();
+    // console.log(anu);
+  //  const dev = Object.assign({},anu);
+  //  dev.name = "Axe-Pearl";
+  //  console.log("anu: ",anu,"      dev: ",dev);//no problem till here
+
+  //  dev.social.twitter = "@axe";
+  //  console.log("anu: ",anu,"      dev: ",dev);// problem occurs
+
+   //solution
+   const dev2 = JSON.parse(JSON.stringify(anu));
+   dev2.social.twitter = "@axe";
+   console.log("anu: ",anu,"      dev2: ",dev2);
+
   </script>
 
 </body>

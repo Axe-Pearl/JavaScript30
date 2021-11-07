@@ -32,15 +32,46 @@
     // Testing
      console.assert(1===2,"This is not true");
     // clearing
-    //   console.clear();
+      console.clear();
     // Viewing DOM Elements
+    const para = document.querySelector("p");
+      console.log(para);
+      console.dir(para);
 
+      console.clear();
     // Grouping together
+     dogs.forEach((dog)=>{
+         console.groupCollapsed(`${dog.name}`);  // or just  console.group(`${dog.name}`);
+         console.log(`Dog name is: ${dog.name}`);
+         console.log(`${dog.name}'s age is: ${dog.age}`);
+         console.groupEnd(`${dog.name}`);
+     })
+
+     console.groupCollapsed("Testing");
+     console.info("Testing...");
+     console.groupEnd("Testing");
+     console.log("Test Closed");
 
     // counting
-
+     console.count("Axe-Pearl");
+     console.count("Anurag");
+     console.count("Axe-Pearl");
+     console.count("Axe-Pearl");
+     console.count("Anurag");
+     console.count("Anurag");
+     console.count("Axe-Pearl");
+     console.count("Anurag");
     // timing
+     console.time("fetching data");
+     fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&amount=2")
+     .then(data => data.json())
+     .then(data=>{
+         console.timeEnd("fetching data");
+         console.log(data);
+     });
 
+     //table 
+     console.table(dogs);
   </script>
 </body>
 </html>
